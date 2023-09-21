@@ -1,0 +1,18 @@
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    flex-basis: 45%;
+  }
+  .total-balance {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .total-balance {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+      
