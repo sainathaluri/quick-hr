@@ -19,6 +19,7 @@ import { AiFillDelete, AiOutlineUsergroupAdd } from "react-icons/ai";
 import { BsFillPersonPlusFill } from "react-icons/bs";
 import { MdFileDownload } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
+import { BsBank2 } from "react-icons/bs";
 import {
   deleteEmployee,
   fetchEmployees,
@@ -239,6 +240,12 @@ export default function Employee() {
             cancelText="No"
             placement="topRight"
           >
+            <BsBank2
+              onClick={() => navigate(`/bank-details/${record.employeeID}`)}
+              title="Direct Deposit"
+              className="icon-mac icon-bank"
+              style={{ cursor: "pointer" }}
+            />
             <AiFillDelete 
               title="Delete" 
               className="icon-mac icon-delete"

@@ -69,6 +69,7 @@ import Files from "./Employee/Files";
 import EmployeeFilesGrid from "./Employee/EmployeeFilesGrid";
 import WeekFileUploader from "./EmployeeAccess/WeekFileUploader";
 import EditCompany from "./Companies/EditCompany";
+import BankDetails from "./BankDeposit/BankDetails";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useSessionStorage("isLoggedIn", false);
@@ -184,6 +185,7 @@ function App() {
               element={<LeaveBalanceList />}
             />
             <Route path="/employees" element={<Employee />} />
+            <Route path="/bank-details/:employeeId" element={<BankDetails />} />
             <Route path="/adduser" element={<EmployeeForm mode="add" />} />
             <Route
               path="/editemployee/:employeeId"
@@ -254,7 +256,7 @@ function App() {
               element={<ContactForm mode="edit" />}
             />
             <Route path="/companies" element={<Companies />} />
-            <Route path="/editcompany/:companyId" element={<EditCompany />} />
+            <Route path="/editcompany" element={<EditCompany />} />
             <Route path="/selectcompanies" element={<SelectCompany />} />
             <Route path="/email" element={<EmailForm />} />
             <Route path="/bulkemail" element={<BulkMailForm />} />
